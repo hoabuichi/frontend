@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .class-selector {
+        .paragraph-text {
             color: red;
         }
 
@@ -13,19 +13,26 @@
             color: green;
         }
 
+        .example h1 {
+            color: yellow;
+        }
+
         #selector {
             color: blue;
         }
 
-        [selector="attribute"] {
+        [cat="dog"] {
             color: orange;
         }
     </style>
 </head>
 <body>
     <h1>Các bộ chọn cơ bản</h1>
-    <p class="class-selector">Bộ chọn dùng class.</p>
+    <div class="example">
+        <h1>Các bộ chọn cơ bản 2</h1>
+    </div>
+    <p class="class-selector paragraph-text">Bộ chọn dùng class.</p>
     <h2 id="selector">Làm quen các bộ lọc</h2>
-    <p selector="attribute">Bộ lọc thuộc tính</p>
+    <p selector="attribute" cat="dog">Bộ lọc thuộc tính</p>
 </body>
 </html>
