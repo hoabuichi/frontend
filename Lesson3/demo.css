@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    width: 200px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 50px 25px;
+}
+
+.card .card-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.card .card-info {
+    font-size: 25px;
+}
+
+.card .card-info span {
+    font-size: 18px;
+}
+
+#user-card {
+    background-color: #4b4bf9;
+}
+
+#activity-card {
+    background-color: #f9734b;
+}
+
+#money-card {
+    background-color: #4b99f9;
+}
