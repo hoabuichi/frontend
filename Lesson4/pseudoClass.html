@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:checked {
+            height: 50px;
+            width: 50px;
+        }
+
+        input[type=text]:disabled {
+            background: #dddddd;
+        }
+
+        p:first-child {
+            background-color: yellow;
+        }
+
+        p:first-of-type {
+            background-color: yellow;
+        }
+
+        p:nth-child(2) {
+            background-color: red;
+        }
+
+        .hover {
+            height: 100px;
+            background-color: blue;
+        }
+
+        .hover:hover {
+            background-color: red;
+        }
+
+        #name:focus {
+            color: red;
+        }
+
+        input:not(#name) {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+        <input type="radio" value="female" name="gender"> Female<br>
+        <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+        <input type="checkbox" value="Car"> I have a car <br><br>
+        Country: <input type="text" disabled="disabled" value="Disneyland"><br><br>
+        Name: <input type="text" id="name" value="Disneyland"><br><br>
+        Age: <input type="text" id="age" value="1"><br><br>
+        <div>
+            <!-- <span></span> -->
+            <p>This paragraph is the first child of its parent (div).</p>
+            <p>This paragraph is not the first child of its parent.</p>
+        </div>
+        <div class="hover">
+
+        </div>
+    </form>
+</body>
+</html>

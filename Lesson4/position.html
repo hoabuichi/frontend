@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid grey;
+            padding: 20px;
+        }
+
+        .position {
+            padding: 20px;
+        }
+
+        .position-static {
+            background-color: aqua;
+        }
+
+        .position-relative-1 {
+            background-color: red;
+            color: white;
+            /* position: relative;
+            top: 20px;
+            left: 50px;
+            z-index: 1; */
+        }
+
+        .position-relative-2 {
+            background-color: yellow;
+            /* position: relative;
+            top: 10px;
+            left: 50px; */
+        }
+
+        .position-absolute {
+            background-color: blue;
+            color: white;
+            /* position: absolute;
+            top: 0; */
+        }
+
+        .position-fixed {
+            background-color: green;
+            color: white;
+            /* position: fixed;
+            top: 0; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="position position-static">Position Static</div>
+        <div class="position position-relative-1">Position Relative 1</div>
+        <div class="position position-relative-2">Position Relative 2</div>
+        <div class="position position-absolute">Position Absolute</div>
+        <div class="position position-fixed">Position Fixed</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::after {
+            content: url(https://www.w3schools.com/css/smiley.gif);
+        }
+
+        h1::before {
+            content: url(https://www.w3schools.com/css/smiley.gif);
+        }
+
+        p.firstline::first-line {
+          color: #ff0000;
+          font-variant: small-caps;
+        }
+
+        p.firstline::first-letter {
+            color: blue;
+            font-size: xx-large;
+        }
+
+        ::selection {
+            color: red;
+            background: yellow;
+        }
+        </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p class="firstline">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+</body>
+</html>
