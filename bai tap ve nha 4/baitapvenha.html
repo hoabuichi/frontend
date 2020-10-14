@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #238ffd;
+            padding: 10px 20px;
+            box-shadow: 3px 3px 10px #8e8e8e;
+        }
+
+        .footer {
+            background-color: #238ffd;
+            padding: 30px 20px;
+            box-shadow: 3px 3px 10px #8e8e8e;
+            margin-top: 50px;
+        }
+
+        .header h1 {
+            color: white;
+            display: inline-block;
+            vertical-align: middle; 
+        }
+
+        .header img {
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        .footer h3 {
+            color: white;
+            margin-top: 20px;
+        }
+
+        .course-card {
+            width: 250px;
+            margin-right: 20px;
+            display: inline-block;
+        }
+
+        .course-img {
+            width: 100%;
+            height: 144px;
+            background-image: url('./abc.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .course-content {
+            border: 1px solid #c3c3c3;
+            padding: 15px;
+        }
+
+        .course-name {
+            margin-bottom: 15px;
+        }
+
+        .course-price {
+            text-align: right;
+            color: red;
+            margin-top: 20px;
+        }
+
+        .course-teacher span{
+            margin-left: 10px;
+        }
+
+        .course-teacher img{
+            vertical-align: middle;
+        }
+
+        .main-content {
+            width: 1140px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        .content {
+            max-width: 1140px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .page-title {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .page-description {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: blue;
+        }
+
+        .nav-container {
+            float: right;
+            height: 70px;
+            padding: 20px 0;
+        }
+
+        .plus-link {
+            color: white;
+            display: inline-block;
+            margin-left: 15px;
+        }
+
+        .plus-link.active {
+            border-bottom: 2px solid yellow;
+        }
+
+        .plus-link:hover {
+            border-bottom: 2px solid yellow;
+            cursor: pointer;
+        }
+
+        .teachers {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .teachers .teacher .image-background {
+            width: 256px;
+            height: 144px;
+            background-image: url('../my_tam.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            float: left;
+        }
+
+        .teachers .teacher {
+            height: 144px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .teachers .teacher .teacher-info {
+            float: left;
+            border: 1px solid #dadada;
+            width: 300px;
+            padding: 15px;
+            border-left: none;
+            height: 100%;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .teachers .teacher .teacher-info p.name {
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .teachers .teacher .teacher-info p.job-title {
+            font-size: 18px;
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .teachers .teacher .course-number {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: black;
+            opacity: 0.6;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        .address {
+            width: 50%;
+            float: left;
+        }
+
+        .links {
+            width: 50%;
+            float: left;
+        }
+
+        .links ul {
+            list-style-type: none;
+        }
+
+        .links ul li {
+            margin-bottom: 7px;
+        }
+
+        .links ul li a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="content">
+                <img src="./logo.png" width="50" height="50" style="border-radius: 50%;" />
+                <h1>PlusPlus Academy</h1>
+                    <div class="nav-container">
+                        <nav>
+                            <a class="plus-link active">Giới thiệu</a>
+                            <a class="plus-link">Khoá học</a>
+                            <a class="plus-link">Đăng ký</a>
+                        </nav>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <h1 class="page-title">Plus Plus, Where you can shine with us!</h1>
+            <p class="page-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            <section id="standout-courses">
+                <h2 class="section-title">Soldout Course</h2>
+                <div class="course-card">
+                    <div class="course-img"></div>
+                    <div class="course-content">
+                        <p class="course-name">Khoá học lập trình Frontend căn bản</p>
+                        <div class="course-teacher">
+                            <img src="../my_tam.jpg" width="50" height="50" style="border-radius: 50%;" />
+                            <span>Phan Thị Mỹ Tâm</span>
+                        </div>
+                        <p class="course-price"><small>200.000VND</small></p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"></div>
+                    <div class="course-content">
+                        <p class="course-name">Khoá học lập trình Frontend căn bản</p>
+                        <div class="course-teacher">
+                            <img src="../my_tam.jpg" width="50" height="50" style="border-radius: 50%;" />
+                            <span>Phan Thị Mỹ Tâm</span>
+                        </div>
+                        <p class="course-price"><small>200.000VND</small></p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img"></div>
+                    <div class="course-content">
+                        <p class="course-name">Khoá học lập trình Frontend căn bản</p>
+                        <div class="course-teacher">
+                            <img src="../my_tam.jpg" width="50" height="50" style="border-radius: 50%;" />
+                            <span>Phan Thị Mỹ Tâm</span>
+                        </div>
+                        <p class="course-price"><small>200.000VND</small></p>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <section id="standout-teachers">
+                <h2 class="section-title">Our Teachers</h2>
+                <div class="teachers">
+                    <div class="teacher">
+                        <p class="course-number">10 khoá học</p>
+                        <div class="image-background"></div>
+                        <div class="teacher-info">
+                            <p class="name">Phạm Mỹ Tâm</p>
+                            <p class="job-title">Job title: Singer, Dancer...</p>
+                            <p class="birthday">22-12-1992</p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <p class="course-number">10 khoá học</p>
+                        <div class="image-background"></div>
+                        <div class="teacher-info">
+                            <p class="name">Phạm Mỹ Tâm</p>
+                            <p class="job-title">Job title: Singer, Dancer...</p>
+                            <p class="birthday">22-12-1992</p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <p class="course-number">10 khoá học</p>
+                        <div class="image-background"></div>
+                        <div class="teacher-info">
+                            <p class="name">Phạm Mỹ Tâm</p>
+                            <p class="job-title">Job title: Singer, Dancer...</p>
+                            <p class="birthday">22-12-1992</p>
+                        </div>
+                    </div>
+                    <div class="teacher">
+                        <p class="course-number">10 khoá học</p>
+                        <div class="image-background"></div>
+                        <div class="teacher-info">
+                            <p class="name">Phạm Mỹ Tâm</p>
+                            <p class="job-title">Job title: Singer, Dancer...</p>
+                            <p class="birthday">22-12-1992</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="content">
+                <div class="address">
+                    <img src="./logo.png" width="50" height="50" style="border-radius: 50%;" />
+                    <h3>13 Nguyen Thai Hoc Street, Ba Dinh, Ha Noi</h3>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a>Thông tin chung</a></li>
+                        <li><a>Chính sách</a></li>
+                        <li><a>Điều khoản</a></li>
+                        <li><a>Về chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
