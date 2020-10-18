@@ -156,13 +156,13 @@
 
 .cards {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .cards .course-card {
-    width: 256px;
+    width: 24%;
     border-radius: 5px;
-    margin-left: 15px;
     overflow: hidden;
     transition: box-shadow 0.5s;
 }
@@ -352,4 +352,73 @@
 
 .footer .footer-container .links ul li{
     color: white;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) { 
+    .header {
+        padding: 20px;
+    }
+
+    .header .content {
+        flex-direction: column;
+    }
+
+    .header .content .nav-container {
+        margin-top: 20px;
+    }
+
+    .main-content .page-description {
+        padding: 0 15px;
+    }
+
+    .main-content .page-description::before {
+        display: none;
+    } 
+
+    .main-content .page-description::after {
+        display: none;
+    }
+
+    .cards {
+        padding: 0 15px;
+    }
+
+    .cards .course-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .teachers {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-container .contact-img {
+        width: 100%;
+    }
+
+    .contact-container .contact-form {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer .footer-container .links {
+        margin-top: 20px;
+    }
+
+    .contact-container .contact-form .form-item label {
+        width: 100px;
+    }
+
+    .footer .footer-container {
+        padding-left: 20px;
+    }
 }
