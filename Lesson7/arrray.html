@@ -29,27 +29,27 @@
     
         // find element that satisfies a condition
     
-        let firstEventItem = arr.find(isEven);
-        console.log('First even:', firstEventItem);
+        // let firstEventItem = arr.find(isEven);
+        // console.log('First even:', firstEventItem);
     
         // loop through array elements
-        let loopFunc = function(item, index) {
-            console.log(index, item);
-        }
+        // let loopFunc = function(item, index) {
+        //     console.log(index, item);
+        // }
     
-        arr.forEach(loopFunc);
+        // arr.forEach(loopFunc);
     
         // check if array includes an element
-        let isContain1 = arr.includes(2);
-        console.log(isContain1);
+        // let isContain1 = arr.includes(2);
+        // console.log(isContain1);
     
         // map a function
     
-        let doubleArr = arr.map(function(item) {
-            return item * 2;
-        })
+        // let doubleArr = arr.map(function(item) {
+        //     return item * 2;
+        // })
     
-        console.log('Double arr: ', doubleArr);
+        // console.log('Double arr: ', doubleArr);
     
         // remove last element
         let poppedItem = arr.pop();
@@ -58,6 +58,10 @@
     
         // add new item at array tail
         arr.push(10);
+        console.log(arr);
+
+        let shiftedItem = arr.shift();
+        console.log(shiftedItem);
         console.log(arr);
     </script>
 </body>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let printResultToConsole = function(result) {
+            console.log(result);
+        }
+
+        let alertResult = function(result) {
+            alert("React is " + result);
+        }
+
+        let calculateReactArea = function(width, height, callback) {
+            let area = width * height;
+            callback(area);
+        }
+
+        // calculateReactArea(10, 20, printResultToConsole);
+        // calculateReactArea(10, 20, alertResult);
+    </script>
+</body>
+</html>

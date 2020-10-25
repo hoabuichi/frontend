@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="search-dom-title" class="search-dom">Search DOM</h1>
+    <p class="search-dom">search dom description</p>
+    <p>search dom description 1</p>
+    <script>
+        let searchDOMH1Elem = document.getElementById('search-dom-title');
+        console.log(searchDOMH1Elem);
+
+        let searchDOMClassElems = document.getElementsByClassName('search-dom');
+        console.log(searchDOMClassElems);
+
+        let searchDOMTagNameElems = document.getElementsByTagName('p');
+        console.log(searchDOMTagNameElems);
+    </script>
+</body>
+</html>

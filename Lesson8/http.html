@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="loadPosts()">Get Post List</button>
+
+    <button type="button" onclick="createNewPost()">Create Post</button>
+
+    <p id="post-list"></p>
+    <p id="post-created"></p>
+
+    <script>
+        function loadPosts() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("post-list").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+            xhttp.send();
+        }
+
+        let createNewPost = function() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("POST", "https://jsonplaceholder.typicode.com/posts", true);
+            xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xmlhttp.send(JSON.stringify({
+                                            title: 'foo',
+                                            body: 'bar',
+                                            userId: 1,
+                                        }));
+
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 201) {
+                    // let createdPost = JSON.parse(this.responseText);
+                    // document.getElementById("post-created").innerHTML = createdPost.title;
+                    document.getElementById("post-created").innerHTML = this.responseText;
+                }
+            };
+        }
+    </script>
+</body>
+</html>
