@@ -5,11 +5,12 @@ let boughtCourseNumber = 0;
 let paddingZero = function(timeUnit) {
     return timeUnit < 10 ? '0' + timeUnit : timeUnit;
 };
+let countdownInterval;
 
 // handle the flashsale countdown
 let setCountDownFlashSale = function(second) {
     if(second === 0) {
-        clearInterval(setCountDownFlashSale);
+        clearInterval(countdownInterval);
     }
     var hours = Math.floor(second / 3600);
     var minutes = Math.floor((second % 3600) / 60);
@@ -21,7 +22,7 @@ let setCountDownFlashSale = function(second) {
 };
 
 // run flash countdown in each second
-let countdownInterval = setInterval(function() {
+countdownInterval = setInterval(function() {
     setCountDownFlashSale(flashSaleSecond--);
 }, 1000);
 
