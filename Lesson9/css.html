@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .red-color {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Page title</h1>
+
+    <button id="btn1">Add Class</button>
+    <button id="btn2">Remove Class</button>
+    <button id="btn3">Toggle Class</button>
+    <button id="btn4">Add Style</button>
+
+    <script>
+        $(document).ready(function(){
+        
+          $("#btn1").click(function(){
+            $("#title").addClass('red-color');
+          });
+
+          $("#btn2").click(function(){
+            $("#title").removeClass('red-color');
+          });
+
+          $("#btn3").click(function(){
+            $("#title").toggleClass('red-color');
+          });
+
+          $("#btn4").click(function(){
+            $("#title").css('font-size', '10px');
+          });
+
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="search-dom-title" class="search-dom">Search DOM</h1>
+    <p class="search-dom">search dom description</p>
+    <p>search dom description 1</p>
+    <script>
+         $(document).ready(function(){
+            let searchDOMH1Elem = $('#search-dom-title');
+            console.log(searchDOMH1Elem);
+
+            let searchDOMClassElems = $('.search-dom');
+            console.log(searchDOMClassElems);
+
+            let searchDOMTagNameElems = $('p');
+            console.log(searchDOMTagNameElems);
+
+            let searchDOMTagNameElems1 = $('p, h1');
+            console.log(searchDOMTagNameElems1);
+        });
+    </script>
+</body>
+</html>

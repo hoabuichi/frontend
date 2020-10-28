@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <button type="button" onclick="createNewPost()">Create Post</button>
+
+    <p id="post-created"></p>
+
+    <script>
+        // let createNewPost = function() {
+        //     var xmlhttp = new XMLHttpRequest();
+        //     xmlhttp.open("POST", "https://jsonplaceholder.typicode.com/posts", true);
+        //     xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        //     xmlhttp.send(JSON.stringify({
+        //                                     title: 'foo',
+        //                                     body: 'bar',
+        //                                     userId: 1,
+        //                                 }));
+
+        //     xmlhttp.onreadystatechange = function() {
+        //         if (this.readyState == 4 && this.status == 201) {
+        //             document.getElementById("post-created").innerHTML = this.responseText;
+        //         }
+        //     };
+        // }
+        let createNewPost = function() {
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/posts", 
+                type: 'POST',
+                data: {
+                    title: 'foo',
+                    body: 'bar',
+                    userId: 1
+                },
+                success: function(result){
+                    document.getElementById("post-created").innerHTML = result.title;
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        };
+   
+    </script>
+</body>
+</html>
