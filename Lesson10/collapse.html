@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Collapser</h2>
+  <a href="#demo" class="btn btn-primary" data-toggle="collapse">Xem thông tin trung tâm</a>
+  <div id="demo" class="collapse">
+    Thuỷ Tiên phát hiện nhiều hộ có tên trong danh sách khảo sát nhưng không có phiếu để nhận quà, mà phiếu do người khác nhận. Không chỉ thế, cô còn nêu rõ một trường hợp người dân có tên trong danh sách nhưng không nhận được phiếu. Đặc biệt, Thuỷ Tiên đặt thẳng vấn đề: "Điển hình như chị trong video clip này có tên trong danh sách nhận quà nhưng lại không nhận được phiếu, vậy thì phiếu đến nhận đủ suất đâu ra? Ngoài ra rất nhiều hộ khó khăn nước ngập sâu lại không có tên trong danh sách nhận hỗ trợ mà phiếu lại ưu tiên suất cho trưởng xóm như trong clip ở đây".
+  </div>
+  <br>
+  <br>
+  <br>
+  <h2>Accordion</h2>
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Chương 1: HTML cơ bản
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Học HTML
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          Chương 2: CSS cơ bản
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Học CSS
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Chương 3: Javascript cơ bản
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Học Javascript
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+</body>
+</html>
