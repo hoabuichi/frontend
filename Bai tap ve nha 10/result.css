@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+.page-title {
+    font-weight: 400;
+}
+
+.header-container {
+    padding: 10px 0;
+}
+
+.banner-container {
+    padding: 200px 0;
+    position: relative;
+    background-image: url('./img//bg-masthead.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.feature-container {
+    padding: 100px 0;
+}
+
+.feature-container .fas, .feature-container .far {
+    font-size: 60px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.feature-container h3 {
+    font-weight: 700;
+}
+
+.feature-item {
+    padding: 0 40px;
+}
+
+.feature-container p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.feature-details-container .feature-content {
+    padding: 110px;
+}
+
+.feature-details-container .feature-content h3 {
+    font-weight: 700;
+}
+
+.feature-details-container .feature-content p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.feature-details-container .feature-background.responsive {
+    background: url("./img/bg-showcase-1.jpg") no-repeat center/cover;
+}
+
+.feature-details-container .feature-background.updated-bootstrap-4 {
+    background: url("./img/bg-showcase-2.jpg") no-repeat center/cover;
+}
+
+.feature-details-container .feature-background.easy-customization {
+    background: url("./img/bg-showcase-3.jpg") no-repeat center/cover;
+}
+
+.testimonials-container {
+    padding: 100px 0;
+}
+
+.testimonials-container h2 {
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.testimonials-container img {
+    box-shadow: 3px 3px 5px #adadad;
+    margin-bottom: 15px;
+}
+
+.testimonials-container h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.testimonials-container p {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.subscribe-container {
+    padding: 100px 0;
+    position: relative;
+    background-image: url('./img//bg-masthead.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-container {
+    padding: 50px 0;
+}
+
+.footer-container p {
+    font-size: 13px;
+    padding-left: 1rem;
+}
+
+.footer-container .fab {
+    font-size: 32px;
+    margin-left: 30px;
+    color: #007bff;
+}
+
+@media(max-width: 991px) {
+    .banner-container {
+        padding: 100px 0;
+    }
+
+
+    .heading-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .feature-details-container .feature-content {
+        padding: 50px 15px;
+    }
+    
+    .feature-details-container .feature-background {
+        min-height: 480px;
+    }
+}
